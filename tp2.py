@@ -1,3 +1,4 @@
+Manipulacion de luminancia y saturacion
 
 **Cargar librerias**
 import numpy as np
@@ -11,6 +12,7 @@ plt.imshow(img)
 
 
 *** RGB a YIQ ***
+Utilizo la matriz y multiplico por los valores RGB
 yiq=np.zeros(img.shape) 
 yiq[:,:,0]=0.229*img[:,:,0]+0.587*img[:,:,1]+0.114*img[:,:,2]
 yiq[:,:,1]=0.595716*img[:,:,0]-0.274453*img[:,:,1]-0.321263*img[:,:,2]
